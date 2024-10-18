@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+:root {
+  --span-color: rgb(159, 163, 167);
+}
+
+a {
+  text-decoration: none;
+}
+
+.items {
+  padding: 60px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "mob mob   head head"
+    "key  mac mac  flop"
+    "game ipad  ipad  flop"
+    "twit exp  tv   tv";
+}
+
+.mobile {
+  grid-area: mob;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile .image {
+  width: 60%;
+}
+
+.mobile img {
+  width: 100%;
+}
+
+.mobile span,
+.header span,
+.mac span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--span-color);
+  letter-spacing: 3px;
+}
+
+.mobile h3 {
+  font-size: 22px;
+  line-height: 32px;
+  margin-block: 10px;
+  max-width: 50%;
+}
+
+.mobile p,
+.right p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--span-color);
+  font-family: "Open Sans", sans-serif;
+  max-width: 70%;
+}
+
+.header {
+  grid-area: head;
+  background-color: #f7f8f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 48px;
+  line-height: 60px;
+  margin-block: 15px;
+  max-width: 80%;
+}
+
+.header a,
+.right a {
+  text-decoration: underline;
+  color: rgb(39, 185, 194);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f05638;
+  text-align: center;
+  grid-area: key;
+}
+
+.keyboard .image img {
+  width: 100%;
+}
+
+.keyboard h3 {
+  font-size: 22px;
+  line-height: 32px;
+  margin-block: 10px;
+  max-width: 95%;
+  color: rgb(255, 251, 251);
+}
+
+.keyboard a {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 200, 10);
+  letter-spacing: 3px;
+}
+
+.mac {
+  grid-area: mac;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mac .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.mac h3 {
+  font-size: 22px;
+  line-height: 32px;
+  margin-block: 10px;
+  color: rgb(51, 51, 51);
+}
+
+.left image {
+  width: 400px;
+}
+
+.left img {
+  width: 100%;
+  transform: translateX(-100px);
+}
+
+.right a {
+  text-decoration: none;
+}
+
+.right p {
+  margin-bottom: 50px;
+}
+
+.floppy {
+  grid-area: flop;
+  background-color: #8f76bc;
+  text-align: center;
+  color: #fff;
+}
+
+.floppy .circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #8166b0;
+  padding: 20px;
+}
+
+.floppy .icon {
+  padding: 10px;
+  border-radius: 60px;
+  margin-bottom: 10px;
+  background-color: #ffffff14;
+}
+
+.icon p {
+  font-size: 12px;
+}
+
+.floppy .icon i {
+  color: #ffc80a;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.floppy .text h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-block: 20px;
+}
+
+.floppy .text p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.floppy .image {
+  width: 200px;
+  margin: auto;
+}
+
+.floppy img {
+  width: 100%;
+}
+
+.floppy a {
+  padding: 20px 38px;
+  border-radius: 50px;
+  background-color: #ffc80a;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f8f9;
+  grid-area: game;
+}
+
+.game .text {
+  text-align: center;
+}
+
+.game .image {
+  margin: auto;
+  width: 200px;
+}
+
+.game .image img {
+  width: 100%;
+}
+
+.game h3 {
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.game a {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 185, 194);
+  letter-spacing: 3px;
+}
+
+.ipad {
+  background-color: #93b6b7;
+  grid-area: ipad;
+  position: relative;
+  text-align: center;
+}
+
+.ipad .image {
+  position: relative;
+  left: -10%;
+  top: 85px;
+}
+
+.ipad img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.ipad p {
+  background-color: #f05638;
+  padding: 8px;
+  font-size: 8px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.ipad h3 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.twitter {
+  grid-area: twit;
+  background-color: #38d5f4;
+  padding-bottom: 0;
+}
+
+.twitter .circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #35cfed;
+  padding: 20px;
+}
+
+.twitter .image {
+  width: 50px;
+}
+
+.twitter .image img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.twitter h3 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 32px;
+  max-width: 80%;
+}
+
+.experience {
+  grid-area: exp;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.experience p {
+  background-color: #7bc424;
+  padding: 8px;
+  font-size: 8px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.experience h3 {
+  font-size: 22px;
+  line-height: 32px;
+  max-width: 80%;
+  margin-top: 10px;
+}
+
+.tv {
+  grid-area: tv;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding-bottom: 0;
+}
+
+.tv h3 {
+  color: #fff;
+  max-width: 40%;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.tv .image {
+  width: 200px;
+}
+
+.tv img {
+  width: 100%;
+}
+
+

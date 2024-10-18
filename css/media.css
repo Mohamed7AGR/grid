@@ -1,0 +1,20 @@
+@media (max-width: 992px) {
+    .container {
+      grid-template-areas:
+        "head head"
+        "mob mob"
+        "key game"
+        "mac mac"
+        "twit flop"
+        "ipad flop"
+        "exp exp"
+        "tv tv";
+    }
+
+    .mobile .image {
+      width: 30%;
+    }
+    .experience{
+      padding-block: 20px;
+    }
+  }
