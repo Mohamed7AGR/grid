@@ -49,6 +49,7 @@ a {
 
 .mobile img {
   width: 100%;
+  transform: translateY(15%);
 }
 
 .mobile span,
@@ -152,14 +153,17 @@ a {
   margin-block: 10px;
   color: rgb(51, 51, 51);
 }
-
-.left image {
-  width: 400px;
+.left{
+  margin-right: 70px;
+}
+.left figure .image {
+  width: 100%;
+ 
 }
 
 .left img {
-  width: 100%;
-  transform: translateX(-100px);
+  width: 200%;
+  transform: translate(-70%,50%);
 }
 
 .right a {
@@ -168,6 +172,7 @@ a {
 
 .right p {
   margin-bottom: 50px;
+  max-width: 90%;
 }
 
 .floppy {
@@ -259,6 +264,7 @@ a {
 
 .game .image img {
   width: 100%;
+  transform: translateX(-12%);
 }
 
 .game h3 {
@@ -282,15 +288,16 @@ a {
   text-align: center;
 }
 
-.ipad .image {
+/* .ipad .image {
   position: relative;
   left: -10%;
   top: 85px;
-}
+} */
 
 .ipad img {
   width: 100%;
   margin-top: 50px;
+  transform: translate(-10%,43%);
 }
 
 .ipad p {
@@ -348,7 +355,7 @@ a {
   color: #fff;
   font-size: 22px;
   line-height: 32px;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .experience {

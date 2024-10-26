@@ -12,9 +12,28 @@
     }
 
     .mobile .image {
-      width: 30%;
+      width: 40%;
+      transform: translateY(10%);
     }
     .experience{
       padding-block: 20px;
     }
+    .ipad img {
+      width: 150%;
+      /* margin-top: 50px; */
+      transform: translate(-25%,135%);
+    }
+    
+.left img {
+  width: 200%;
+  transform: translate(-70%,38%);
+}
+.ipad h3 {
+
+  width: 100%;
+}
+.twitter h3 {
+  
+  max-width: 90%;
+}
   }
